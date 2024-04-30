@@ -1,0 +1,249 @@
+body,
+.topview #title {
+    margin: 0px;
+}
+
+body {
+    background-color: hsl(42, 50%, 78%);
+}
+
+header {
+    z-index: 999;
+}
+
+.topview-head {
+    padding-right: 20px;
+    padding-left: 10px;
+    position: sticky;
+    top: 0;
+    display: flex;
+    background-color: hsl(32, 97%, 40%);
+    align-items: center;
+    height: 100px;
+    box-shadow: 0px 0px 10px hsl(0, 2%, 12%);
+
+}
+
+.topview #title {
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.2em;
+    padding: 10px;
+    color: white;
+    text-shadow: 0px 0px 50px hsl(0, 0%, 0%);
+}
+
+.topview #brand {
+    width: 50px;
+}
+
+.topnav-icon,
+img {
+    display: block;
+
+    img {
+        padding-top: 5px;
+    }
+}
+
+.topview {
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    border: 1px solid white;
+    border-radius: 15px;
+}
+
+.cont-topview {
+    display: flex;
+    width: 35%;
+}
+
+.container .nav-bar {
+    display: flex;
+    padding: 10px;
+    font-size: large;
+
+    a {
+        width: 25%;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+    }
+}
+
+.container {
+    margin-left: auto;
+    width: 65%;
+}
+
+.container #menubtn_container {
+    display: none;
+    justify-content: right;
+    padding: 10px;
+    font-size: large;
+
+    a {
+        text-decoration: none;
+        cursor: default;
+    }
+}
+
+.container .topnav-icons {
+    padding: 1px;
+}
+
+.container .nav-bar hr {
+    display: none;
+    width: 95%;
+    margin: 0px;
+}
+
+main {
+    margin: 100px 0px;
+}
+
+main .main.main {
+    display: flex;
+
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+}
+
+main .main-contain {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+
+    row-gap: 50px;
+    width: 400px;
+    height: 600px;
+
+    div {
+        display: block;
+        width: 100%;
+        height: 20%;
+        background-color: rgb(227, 207, 183);
+
+        h1 {
+            display: inline;
+            font-family: Marhey-AR, sans-serif;
+            font-weight: 400;
+            direction: rtl;
+        }
+
+        a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+            width: 100%;
+            border-radius: inherit;
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+main .circular.border {
+    border: 5px solid;
+    border-radius: 20px;
+    border-color: hsla(0, 0%, 46%, 0.514);
+    text-align: center;
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+}
+
+.foot-contain {
+    display: flex;
+    padding: 20px 10px;
+    background-color: hsl(32, 85%, 65%);
+    box-shadow: 0px -1px 30px hsl(0, 0%, 42%);
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(to right, rgb(201, 110, 12), rgba(246, 215, 13, 0.457));
+
+    .foot-content {
+        font-size: x-large;
+    }
+
+    #mail {
+        text-decoration: none;
+        color: rgb(61, 27, 27);
+        text-shadow: 0px 0px 20px rgb(61, 41, 8);
+    }
+
+    hr {
+        border-color: hsla(0, 4%, 58%, 0.4);
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width: 800px) {
+    .container .nav-bar {
+        display: none;
+
+    }
+
+    .container .nav-bar hr {
+        display: block;
+    }
+
+    .container #menubtn_container {
+        display: flex;
+    }
+
+    .container:hover {
+        .nav-bar {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            background-color: rgb(231, 231, 231);
+            top: 50px;
+            left: 10px;
+            right: 10px;
+            box-shadow: 2px 2px 5px, -2px 2px 5px;
+            border-radius: 20px;
+
+            a {
+                width: auto;
+                color: black;
+                border-radius: 20px;
+                margin-top: -1px;
+            }
+
+            hr {
+                width: 80%;
+                align-self: center;
+                border-color: rgba(211, 199, 199, 0.352);
+            }
+        }
+    }
+
+    .container {
+        width: auto;
+    }
+
+    .cont-topview {
+        width: auto;
+    }
+
+    .topview-head {
+        height: 70px;
+    }
+
+    .topview #brand {
+        width: 35px;
+    }
+
+    .topview #title {
+        font-size: 1em;
+    }
+}

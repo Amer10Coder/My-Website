@@ -1,0 +1,41 @@
+.container .nav-bar a:hover {
+    text-shadow: 0px 0px 50px rgb(0, 0, 0);
+    color: hsl(33, 96%, 83%);
+}
+
+.main-contain .topic.content {
+    transition: all 50ms ease-in-out;
+    box-shadow: 0 0 5px;
+}
+
+.main-contain .topic.content:hover {
+    background-color: rgba(223, 92, 11, 0.573);
+    scale: 1.06;
+    box-shadow: 0 0 10px 5px rgb(94, 94, 94);
+
+    a {
+        color: white;
+    }
+}
+
+
+.foot-contain #mail:hover {
+    text-decoration: underline hsla(0, 0%, 0%, 0.582);
+    color: rgba(61, 27, 27, 0.676);
+}
+
+.foot-contain #mail:active {
+    color: brown;
+}
+
+@media screen and (max-width: 800px) {
+    .container:hover {
+        background-color: rgba(193, 193, 197, 0.212);
+    }
+
+    .container .nav-bar a:hover {
+        text-shadow: none;
+        color: white;
+        background-color: hsla(28, 66%, 37%, 0.5);
+    }
+}

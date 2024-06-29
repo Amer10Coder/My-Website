@@ -187,6 +187,11 @@ footer {
 
 
 @media screen and (max-width: 800px) {
+    .googleAds {
+overflow-x: auto;
+overflow-y: hidden;
+}
+    
     .container .nav-bar {
         display: none;
 
